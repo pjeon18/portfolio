@@ -20,97 +20,76 @@ export const resume: Resume = {
   },
   "education": [
     {
-      "school": "Harvard College\tCambridge, MA",
-      "degree": "Bachelor of Arts (A.B.) in Computer Science on the Honor Track, Secondary in Visual Studies\tGPA: 3.7\t Expected Graduation May 2027",
-      "location": "",
-      "gpa": "",
-      "dates": ""
+      "school": "Harvard College",
+      "degree": "A.B. in Computer Science (Honors); Secondary in Visual Studies",
+      "location": "Cambridge, MA",
+      "gpa": "3.7",
+      "dates": "Expected May 2027"
     }
   ],
   "experience": [
     {
-      "role": "UI/UX Designer, Tech for Social Good \tCambridge, MA Worked with a college-application mentorship nonprofit to design and prototype sign-up website (lo-fi & hi-fi in Figma)",
-      "org": "February",
-      "location": "",
-      "dates": "2025 \u2013 May 2025",
-      "bullets": []
+      "role": "UI/UX Designer",
+      "org": "Tech for Social Good",
+      "location": "Cambridge, MA",
+      "dates": "Feb 2025 – May 2025",
+      "bullets": [
+        "Worked with a college-application mentorship nonprofit to design and prototype a sign-up website (lo-fi & hi-fi in Figma).",
+        "Conducted user research through surveys and interviews; led weekly design iterations for the company board."
+      ]
     },
     {
-      "role": "Conducted user research through surveys and interviews; ed design iterations weekly to the company board.",
-      "org": "",
-      "location": "",
-      "dates": "present",
-      "bullets": []
+      "role": "Procurement Manager",
+      "org": "The Harvard Shop",
+      "location": "Cambridge, MA",
+      "dates": "Sep 2023 – Feb 2025",
+      "bullets": [
+        "Ordered and managed warehouse inventory of ~$7.8M across ~1,100 SKUs for three retail locations and an online store.",
+        "Decreased web stockout rate from 5.32% to 1.90% through weekly walkthroughs and prioritizing low-inventory SKUs.",
+        "Reached record-high profit margins; increased revenue 47% YoY (~$370K) by automating high-demand product orders with a Python API integration (Lightspeed).",
+        "Grew inventory 64% to ~$1.9M while improving margins.",
+        "Sourced and designed new products and collections aligned with consumer preferences.",
+        "Maintained partnerships with brands including Nike, Champion, Patagonia, and Peter Millar to ensure product quality.",
+        "Led weekly procurement meetings with stores, marketing, and product teams to coordinate new campaigns.",
+        "Collaborated with the business office and CFO to ensure compliance with taxes and trademarks.",
+        "Improved product outflow by ~65% via supplier pre-ticketing and related process optimizations."
+      ]
     },
     {
-      "role": "Procurement Manager, The Harvard Shop\tCambridge, MA",
-      "org": "September",
-      "location": "",
-      "dates": "2023 \u2013 February 2025",
-      "bullets": []
+      "role": "Marketing Analytics Intern",
+      "org": "The Harvard Shop",
+      "location": "Cambridge, MA",
+      "dates": "Jun 2023 – Aug 2023",
+      "bullets": [
+        "Used digital marketing tools to analyze return on ad spend on Meta and Instagram, conversions, and open rates of emails.",
+        "Conducted user research through survey and A/B testing of email format, checkout flow, and pop-up campaigns.",
+        "Tracked user-satisfaction rates to measure potential for new implementations; presented data to the board of directors.",
+        "Designed layouts for summer email marketing campaign, generating over $8,000 in attributed campaigns.",
+        "Strategized and launched SMS campaign as a final project; presented case study in front of the board of directors."
+      ]
     },
     {
-      "role": "Ordered and managed warehouse inventory of $7.8M across + SKUs for three retail locations and an online store Decreased web stockout rate from 5.32% to 1.90% with weekly walkthroughs and prioritizing low inventory SKUs",
-      "org": "",
-      "location": "",
-      "dates": "1100",
-      "bullets": []
+      "role": "Student Intern",
+      "org": "Consulate General of the Republic of Korea",
+      "location": "Boston, MA",
+      "dates": "Jun 2022 – Jun 2023",
+      "bullets": [
+        "Transcribed contents of biotech strategy forum and conferences from Korean to English.",
+        "Stationed at local Korean Schools to assist teachers with competitions and ceremonies held by the Consulate General.",
+        "Designated as photographer and receptionist for Korean Biotech conferences at the Cambridge Innovation Center."
+      ]
     },
     {
-      "role": "Reached record-high profit margins Increased revenue 47% YoY ($370K) by automating high-demand product orders via Python API integration with Lightspeed, while growing inventory 64% to $1.9M and improving margins Sourced and designed new products and collections to foster brand growth while meeting consumer preferences Maintained partnerships with brands such as Nike, Champion, Patagonia, Peter Millar to ensure higher quality products Led weekly procurement meetings on updates with the stores, marketing, product teams to coordinate new campaigns Worked with the business office and CFO to ensure company compliance with industry standards of taxes and trademark",
-      "org": "65% by optimizing product outflow such as by supplier pre-ticketing",
-      "location": "",
-      "dates": "",
-      "bullets": []
-    },
-    {
-      "role": "Marketing Analytics Intern, The Harvard Shop\tCambridge, MA Used digital marketing tools to analyze return on ad spend on Meta and Instagram, conversions, and open rates of emails Conducted user research through survey and A/B testing of email format, checkout flow, and pop-up campaigns",
-      "org": "June",
-      "location": "",
-      "dates": "2023 \u2013 August 2023",
-      "bullets": []
-    },
-    {
-      "role": "Tracked user-satisfaction rates to measure potential for new implementations, ed data to the board of directors Designed layouts for summer email marketing campaign, generating over $8,000 in attributed campaigns",
-      "org": "",
-      "location": "",
-      "dates": "present",
-      "bullets": []
-    },
-    {
-      "role": "Strategized and launched SMS campaign as a final project, ing case study in front of the board of directors",
-      "org": "",
-      "location": "",
-      "dates": "present",
-      "bullets": []
-    },
-    {
-      "role": "Student Intern, Consulate General of the Republic of Korea\tBoston, MA Transcribed contents of biotech strategy forum and conferences from Korean to English",
-      "org": "June",
-      "location": "",
-      "dates": "2022 \u2013 June 2023",
-      "bullets": []
-    },
-    {
-      "role": "Stationed",
-      "org": "local Korean Schools to assist teachers with competitions and ceremonies held by the Consulate General",
-      "location": "",
-      "dates": "",
-      "bullets": []
-    },
-    {
-      "role": "Designated as photographer and receptionist for Korean Biotech conferences",
-      "org": "the Cambridge Innovation Center",
-      "location": "",
-      "dates": "",
-      "bullets": []
-    },
-    {
-      "role": "Student Worker, Bedford Food Bank\tBedford, MA Initiated a summer lunch program for school lunch-dependent student families in the summer Coordinated with local library for an easily accessible meal pick-up program for qualifying families and the elderly Packaged delivery and pick-up meal bags for families, partnering with local farms, grocery stores, and volunteers to manage supply of food and operation Designed and delivered information packets for government assistance and food bank programs",
-      "org": "May",
-      "location": "",
-      "dates": "2022 \u2013 September 2022",
-      "bullets": []
+      "role": "Student Worker",
+      "org": "Bedford Food Bank",
+      "location": "Bedford, MA",
+      "dates": "May 2022 – Sep 2022",
+      "bullets": [
+        "Initiated a summer lunch program for school lunch-dependent student families in the summer.",
+        "Coordinated with local library for an easily accessible meal pick-up program for qualifying families and the elderly.",
+        "Packaged delivery and pick-up meal bags for families, partnering with local farms, grocery stores, and volunteers to manage supply of food and operation.",
+        "Designed and delivered information packets for government assistance and food bank programs."
+      ]
     }
   ],
   "skills": [

@@ -95,7 +95,7 @@ export default function ResumePage() {
                 className="rounded-xl border border-border/60 p-4 md:p-5 bg-card"
               >
                 <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <span className="font-medium">{e.school}</span>
+                  <span className="text-base md:text-lg font-semibold">{e.school}</span>
                   <span className="text-xs text-muted-foreground">{e.dates}</span>
                 </div>
                 <div className="text-sm text-muted-foreground mt-1">{e.degree}</div>
