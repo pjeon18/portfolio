@@ -147,3 +147,11 @@
     box-shadow: inset 0 0 0 1px transparent;
   }
 }
+
+/* small-change: print-specific styles for resume */
+@media print {
+  .print\:hidden { display: none !important; }
+  .bg-card, .border { box-shadow: none !important; }
+  .bg-card { background: transparent !important; }
+  .border { border-color: #e5e7eb !important; }
+}

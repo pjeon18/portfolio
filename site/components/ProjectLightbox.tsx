@@ -27,7 +27,7 @@ export function ProjectLightbox({ card, project }: { card: React.ReactNode; proj
           </div>
           <div className="sm:col-span-2 p-1 sm:p-2">
             <p className="text-sm text-muted-foreground">
-              {((project as any).descriptionLong as string) ?? project.description}
+              {project.descriptionLong ?? project.description}
             </p>
           </div>
         </div>

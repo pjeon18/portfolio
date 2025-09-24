@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Project } from "@/content/projects";
+import { Project, ProjectCover } from "@/content/projects";
 import { motion } from "framer-motion";
 
 type Props = { project: Project; layout?: "standard" | "masonry" };
@@ -25,8 +25,8 @@ export function ProjectCard({ project, layout = "standard" }: Props) {
             <Image
               src={project.cover.src}
               alt={project.cover.alt}
-              width={(project.cover as any).width ?? 1600}
-              height={(project.cover as any).height ?? 1200}
+              width={project.cover.width ?? 1600}
+              height={project.cover.height ?? 1200}
               className="object-cover w-full h-auto transition-transform duration-500 will-change-transform group-hover:scale-[1.02]"
             />
           ) : (

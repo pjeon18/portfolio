@@ -56,7 +56,7 @@ export function Hero() {
             ref={ref}
             onMouseMove={onMouseMove}
             onMouseLeave={onMouseLeave}
-            style={{ transform: translate as any }}
+            style={{ transform: translate }}
             className="rounded-full px-6 py-3 text-base font-semibold bg-white text-black shadow-lg shadow-black/10 hover:shadow-black/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-white"
           >
             <a href="#work">View Work</a>

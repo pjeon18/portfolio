@@ -20,7 +20,7 @@ export function ContactForm() {
     resolver: zodResolver(schema),
   });
 
-  async function onSubmit(values: FormValues) {
+  async function onSubmit() {
     setLoading(true);
     try {
       await fetch("/api/contact", { method: "POST" });

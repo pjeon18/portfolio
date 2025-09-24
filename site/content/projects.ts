@@ -1,4 +1,4 @@
-export type ProjectCover = { src: string; alt: string; type: "image" | "video" };
+export type ProjectCover = { src: string; alt: string; type: "image" | "video"; width?: number; height?: number };
 export type Project = {
   slug: string;
   title: string;
