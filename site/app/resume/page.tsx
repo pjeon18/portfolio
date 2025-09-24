@@ -124,6 +124,84 @@ export default function ResumePage() {
           </motion.div>
         </motion.section>
 
+        {/* Certifications Section */}
+        {resume.certifications && resume.certifications.length > 0 && (
+          <motion.section 
+            initial={{ opacity: 0, y: 8 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.4 }}
+            className="py-8 md:py-10"
+          >
+            <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Certifications</h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 8 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.3 }}
+              className="rounded-xl border border-border/60 p-4 md:p-5 bg-card"
+            >
+              <ul className="list-disc pl-5 space-y-1 text-sm leading-6">
+                {resume.certifications.map((cert, i) => (
+                  <li key={i}>{cert}</li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.section>
+        )}
+
+        {/* Awards Section */}
+        {resume.awards && resume.awards.length > 0 && (
+          <motion.section 
+            initial={{ opacity: 0, y: 8 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.4 }}
+            className="py-8 md:py-10"
+          >
+            <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Awards</h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 8 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.3 }}
+              className="rounded-xl border border-border/60 p-4 md:p-5 bg-card"
+            >
+              <ul className="list-disc pl-5 space-y-1 text-sm leading-6">
+                {resume.awards.map((award, i) => (
+                  <li key={i}>{award}</li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.section>
+        )}
+
+        {/* Activities Section */}
+        {resume.activities && resume.activities.length > 0 && (
+          <motion.section 
+            initial={{ opacity: 0, y: 8 }} 
+            whileInView={{ opacity: 1, y: 0 }} 
+            viewport={{ once: true, margin: "-10%" }}
+            transition={{ duration: 0.4 }}
+            className="py-8 md:py-10"
+          >
+            <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Activities</h2>
+            <motion.div 
+              initial={{ opacity: 0, y: 8 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true, margin: "-10%" }}
+              transition={{ duration: 0.3 }}
+              className="rounded-xl border border-border/60 p-4 md:p-5 bg-card"
+            >
+              <ul className="list-disc pl-5 space-y-1 text-sm leading-6">
+                {resume.activities.map((activity, i) => (
+                  <li key={i}>{activity}</li>
+                ))}
+              </ul>
+            </motion.div>
+          </motion.section>
+        )}
+
         {/* Back to Home Link at Bottom */}
         <div className="print:hidden mt-8 pt-6 border-t border-border/50">
           <Link href="/" className="text-sm text-muted-foreground hover:text-foreground transition-colors">
