@@ -93,27 +93,32 @@ export const resume: Resume = {
     }
   ],
   "skills": [
-    "Technical Skills: Python",
+    "Python",
     "Figma",
-    "Adobe Suite",
+    "Adobe Creative Suite",
     "Java",
     "JavaScript",
     "SQL",
     "Klaviyo",
-    "Shopify Certifications & Training: MIT Beaverworks (Github",
-    "Medlytics",
-    "and Python Core)",
-    "EHSSP Korean Language Program (Ewha Harvard Summer School Program) Awards: FY 2023 SNUAA",
-    "NE Scholarship",
-    "Scholastic Art and Writing Gold Key",
+    "Shopify"
+  ],
+  "certifications": [
+    "MIT Beaverworks — GitHub",
+    "MIT Beaverworks — Medlytics",
+    "MIT Beaverworks — Python Core",
+    "EHSSP Korean Language Program (Ewha Harvard Summer School Program)"
+  ],
+  "awards": [
+    "FY 2023 SNUAA NE Scholarship",
+    "Scholastic Art & Writing — Gold Key",
     "National Merit Commended Scholar",
     "AP Scholar with Distinction",
-    "AP with WE Service Recognition Activities: Designer for Harvard Korean Association",
-    "Asian American Brotherhood",
-    "the Harvard Crimson"
+    "AP with WE Service Recognition"
   ],
-  "certifications": [],
-  "awards": [],
-  "activities": [],
+  "activities": [
+    "Designer — Harvard Korean Association",
+    "Asian American Brotherhood",
+    "The Harvard Crimson"
+  ],
   "languages": []
 };
