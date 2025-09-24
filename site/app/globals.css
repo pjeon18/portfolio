@@ -89,6 +89,15 @@
   --sidebar-ring: oklch(0.708 0 0);
 }
 
+/* small-change: per-section accents and surface helper */
+[data-section="work"] { --accent: hsl(192 95% 45%); }
+[data-section="about"] { --accent: hsl(35 100% 55%); }
+[data-section="bio"] { --accent: hsl(326 85% 62%); }
+[data-section="contact"] { --accent: hsl(140 70% 45%); }
+.section-surface { background: radial-gradient(60% 80% at 50% 0%, color-mix(in hsl, var(--accent) 22%, transparent) 0%, transparent 60%); }
+/* small-change: full-bleed helper for wide galleries */
+.full-bleed { width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; }
+
 .dark {
   --background: oklch(0.145 0 0);
   --foreground: oklch(0.985 0 0);

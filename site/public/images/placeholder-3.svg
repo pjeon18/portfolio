@@ -1,0 +1,16 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="g3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00DBDE"/>
+      <stop offset="1" stop-color="#FC00FF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="1000" rx="32" fill="url(#g3)"/>
+  <g opacity="0.2">
+    <circle cx="800" cy="500" r="360" fill="#fff"/>
+    <rect x="300" y="650" width="400" height="120" rx="16" fill="#fff"/>
+  </g>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, -apple-system, system-ui, Segoe UI, Roboto" font-weight="700" font-size="56" fill="#fff">Placeholder</text>
+  <text x="50%" y="58%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, -apple-system, system-ui, Segoe UI, Roboto" font-size="20" fill="#fff" opacity="0.9">Replace with your cover image</text>
+</svg>
+

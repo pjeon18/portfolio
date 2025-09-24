@@ -1,0 +1,10 @@
+<svg width="1200" height="1600" viewBox="0 0 1200 1600" xmlns="http://www.w3.org/2000/svg" fill="none">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF00FF"/>
+      <stop offset="1" stop-color="#000FFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#g1)"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" font-family="Inter, -apple-system, system-ui, Segoe UI, Roboto" font-weight="700" font-size="48" fill="#fff">Poster A</text>
+</svg>

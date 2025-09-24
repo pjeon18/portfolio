@@ -1,8 +1,7 @@
 import { Nav } from "@/components/Nav";
 import { Hero } from "@/components/Hero";
 import { Section } from "@/components/Section";
-import { projects } from "@/content/projects";
-import { ProjectCard } from "@/components/ProjectCard";
+import WorkGridMasonry from "@/components/WorkGridMasonry";
 import { Timeline } from "@/components/Timeline";
 import { ContactForm } from "@/components/ContactForm";
 import { Footer } from "@/components/Footer";
@@ -13,19 +12,16 @@ export default function Home() {
       <Nav />
       <main id="main">
         <Hero />
-        <Section id="work" title="Featured Work">
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projects.map((p) => (
-              <ProjectCard key={p.slug} project={p} />
-            ))}
-          </div>
+        {/* small-change: larger grid and container width */}
+        <Section id="work" title="Featured Work" sectionKey="work">
+          <WorkGridMasonry />
         </Section>
-        <Section id="about" title="About">
+        <Section id="about" title="About" sectionKey="about">
           <p className="max-w-2xl text-balance text-lg">
             Designer-engineer hybrid specializing in playful interfaces, systems thinking, and crisp motion.
           </p>
         </Section>
-        <Section id="bio" title="Bio">
+        <Section id="bio" title="Bio" sectionKey="bio">
           <Timeline
             items={[
               { year: "2019", title: "Graduated", description: "BFA in Interaction Design." },
@@ -34,7 +30,7 @@ export default function Home() {
             ]}
           />
         </Section>
-        <Section id="contact" title="Contact">
+        <Section id="contact" title="Contact" sectionKey="contact">
           <ContactForm />
         </Section>
       </main>

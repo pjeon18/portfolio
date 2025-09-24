@@ -3,6 +3,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { Inter, Sora } from "next/font/google";
 import { Toaster } from "sonner";
+import CursorDot from "@/components/CursorDot";
 
 // Fonts: Inter (body) and Space Grotesk (display)
 // To swap display to Sora or Plus Jakarta Sans, replace Space_Grotesk import accordingly.
@@ -34,6 +35,8 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           {children}
           <Toaster richColors position="top-center" />
+          {/* small-change: theme-colored cursor */}
+          <CursorDot />
         </ThemeProvider>
       </body>
     </html>
