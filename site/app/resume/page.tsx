@@ -4,6 +4,7 @@ import { resume } from "@/content/resume";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { motion } from "framer-motion";
+import { ExperienceCard } from "@/components/ExperienceCard";
 
 export default function ResumePage() {
   return (
@@ -19,7 +20,7 @@ export default function ResumePage() {
         </div>
       </div>
 
-      <div className="mx-auto max-w-screen-md px-4 md:px-6 py-8 md:py-12 print:px-0">
+      <div className="mx-auto max-w-screen-lg px-4 md:px-6 py-8 md:py-10 print:px-0">
         <div className="flex items-center justify-between gap-4 print:hidden mb-8">
           <h1 className="font-[family-name:var(--font-sora)] text-3xl font-bold">Resume</h1>
           <button
@@ -56,31 +57,21 @@ export default function ResumePage() {
           transition={{ duration: 0.4 }}
           className="py-8 md:py-10"
         >
-          <h2 className="text-xl md:text-2xl font-semibold tracking-tight mb-4">Experience</h2>
-          <div className="space-y-4 md:space-y-5">
-            {resume.experience.map((exp, i) => (
-              <motion.article 
-                key={i}
-                initial={{ opacity: 0, y: 8 }} 
-                whileInView={{ opacity: 1, y: 0 }} 
-                viewport={{ once: true, margin: "-10%" }}
-                transition={{ duration: 0.3, delay: i * 0.1 }}
-                className="rounded-xl border border-border/60 p-4 md:p-5 bg-card"
-              >
-                <div className="flex flex-wrap items-baseline justify-between gap-2">
-                  <h3 className="font-medium text-sm">{exp.role}</h3>
-                  <span className="text-xs text-muted-foreground">{exp.dates}</span>
+          <h2 className="text-xl md:text-2xl font-semibold tracking-tight">Experience</h2>
+
+          {/* small-change: timeline wrapper with rail and dots */}
+          <div className="relative mt-4 pl-5 md:pl-6">
+            {/* rail */}
+            <div aria-hidden className="timeline-rail absolute left-2 md:left-2.5 top-0 bottom-0 w-px bg-border/70" />
+            <div className="grid gap-5">
+              {resume.experience.map((x, i) => (
+                <div key={i} className="relative">
+                  {/* dot */}
+                  <div aria-hidden className="timeline-dot absolute -left-0.5 md:-left-0.5 top-3 h-2.5 w-2.5 rounded-full bg-primary/90 ring-2 ring-background" />
+                  <ExperienceCard item={x} className="ml-2 md:ml-3" />
                 </div>
-                {exp.org && (
-                  <p className="text-xs text-muted-foreground mt-1">{exp.org}</p>
-                )}
-                {exp.bullets && exp.bullets.length > 0 && (
-                  <ul className="mt-3 list-disc pl-5 space-y-1 text-sm">
-                    {exp.bullets.map((b, j) => (<li key={j}>{b}</li>))}
-                  </ul>
-                )}
-              </motion.article>
-            ))}
+              ))}
+            </div>
           </div>
         </motion.section>
 
