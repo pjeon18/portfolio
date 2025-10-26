@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { Project, ProjectCover } from "@/content/projects";
+import { Project } from "@/content/projects";
 import { motion } from "framer-motion";
 
 type Props = { project: Project; layout?: "standard" | "masonry" };
