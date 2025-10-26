@@ -66,13 +66,11 @@ export function ProjectCard({ project, layout = "standard" }: Props) {
             </span>
           ))}
         </div>
-        {project.caseStudyUrl && (
-          <div>
-            <Link href={project.caseStudyUrl} target="_blank" className="text-sm font-medium underline underline-offset-4">
-              Case Study →
-            </Link>
-          </div>
-        )}
+        <div>
+          <Link href={`/work/${project.slug}`} className="text-sm font-medium underline underline-offset-4 hover:text-foreground transition-colors">
+            See more →
+          </Link>
+        </div>
       </div>
     </motion.article>
   );

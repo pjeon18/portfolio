@@ -116,9 +116,10 @@ export const resume: Resume = {
     "AP with WE Service Recognition"
   ],
   "activities": [
-    "Designer — Harvard Korean Association",
-    "Asian American Brotherhood",
-    "The Harvard Crimson"
+    "Community Group Leader - Harvard Radcliffe Asian American Chrsitian Fellowship (AACF)",
+    "Design Chair — Harvard Korean Association",
+    "Social Chair - Asian American Brotherhood",
+    "Designer - The Harvard Crimson"
   ],
   "languages": []
 };

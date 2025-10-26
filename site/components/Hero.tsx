@@ -33,12 +33,12 @@ export function Hero() {
   return (
     <div className="relative overflow-hidden">
       <motion.div style={{ y: parallaxY }} className="pointer-events-none absolute inset-0 -z-10 bg-[radial-gradient(1200px_600px_at_50%_-10%,hsl(192_95%_45%/.25),transparent_60%),linear-gradient(135deg,var(--color-primary-from),var(--color-primary-to))] opacity-90" />
-      <div className="mx-auto max-w-6xl px-4 py-20 md:py-28">
+      <div className="mx-auto max-w-6xl px-4 py-12 md:py-20 min-h-screen flex items-center">
         <motion.h1
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
-          className="font-[family-name:var(--font-space-grotesk)] text-5xl md:text-7xl font-extrabold leading-[1.05] tracking-tight text-white drop-shadow-sm"
+          className="font-[family-name:var(--font-space-grotesk)] text-5xl md:text-7xl font-extrabold leading-[1.2] md:leading-[1.25] tracking-tight text-white drop-shadow-sm"
         >
           Designing colorful,
           <br /> user‑happy products.

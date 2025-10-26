@@ -148,6 +148,20 @@
   }
 }
 
+/* small-change: focus band effect for off-screen sections */
+.section-focus { 
+  transition: opacity .35s ease, filter .35s ease; 
+}
+.section-dim { 
+  opacity: .55; 
+  filter: blur(1px); 
+}
+@media (prefers-reduced-motion: reduce) {
+  .section-focus { 
+    transition: none; 
+  }
+}
+
 /* small-change: print-specific styles for resume */
 @media print {
   .print\:hidden { display: none !important; }
